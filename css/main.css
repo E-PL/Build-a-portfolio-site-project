@@ -1,0 +1,163 @@
+body {
+		text-align: center;
+		font-family: 'Source Code Pro', monospace;
+		background-color: #eee8d5;
+		color: #586e75;
+		box-sizing: border-box;
+		font-size: 14px;
+}
+.blue {
+		color: #268bd2
+}
+section, header, footer {
+	width: 100%;
+	background-color: #fdfee3
+}
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	width: 90%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 50px;
+	padding-top: 30px;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+}
+.header {
+	box-sizing: border-box;
+}
+.avatar {
+	width: 20%;
+}
+.title {
+	margin: auto;
+	width: 100%;
+
+}
+.full-image {
+	width: 95%;
+}
+.description {
+	text-align: justify;
+
+}
+.project {
+	margin: auto;
+	padding-top: 15px;
+}
+.project-link{
+	width: 100%;
+	min-height: 48px;
+	color: #268bd2
+}
+.preview {
+	width: 86%;
+}
+.about-me {
+	padding: 3px;
+	padding-top: 15px;
+	width: 85%;
+    margin: auto;
+}
+.avatar {
+	border-radius: 50%;
+	margin-top: 6px;
+}
+.contacts {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+}
+.contact {
+	width: 80%;
+	margin: auto;
+	padding-top: 15px;
+}
+.contacts-title {
+	width: 100%;
+}
+#email-link, #linkedin-link, #github-link {
+    width: 90%;
+    margin: auto;
+
+}
+.button {
+	width: 80%;
+	color: #849800;
+}
+/*media queries*/
+
+@media screen and (min-width: 750px) {
+	/*display the logo to the left*/
+	.logo {
+		width: 20%;
+	}
+	.title {
+		width: 80%;
+	}
+	.header {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+	}
+	.project {
+		width: 48%;
+	}
+	.work {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
+	.work-title {
+		width: 100%;
+	}
+
+	.header {
+		justify-content: center;
+		text-align: right;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.avatar {
+    	width: 58%;
+		}
+	.logo {
+		text-align: left;
+	}
+	.contact {
+	width: 30%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		font-size: 18px;
+	}
+	.project {
+		width: 30%;
+	}
+
+.logo {
+	width: 10%;
+	}
+.title {
+	width: 90%;
+}
+.contacts-title, .work-title {
+	text-align: left;
+	padding-left: 15px;
+}
+.wrapper {
+   
+    width: 75%;
+    /* margin: auto; */
+    padding-left: 20%;
+    padding-right: 5%;
+   	background-color: #fdfee3
+
+}
+
+}
