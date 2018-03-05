@@ -2,122 +2,107 @@
 
 <html lang="en">
 <head>
-	<title>EPL - Personal Portfolio</title><!-- meta tags -->
+	<title>EPL - Personal Portfolio</title>
+	<!-- meta tags -->
 	<meta charset="UTF-8">
-	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"><!-- stylesheets -->
-	<link href="css/main.css" rel="stylesheet"><!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"><!-- font-awesome CDN-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.3.0/css/zocial.css" rel="stylesheet"><!-- favicons -->
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+	<!-- favicon's meta -->
+	<meta content="#da532c" name="msapplication-TileColor">
+	<meta content="img/favicons/browserconfig.xml" name="msapplication-config">
+	<meta content="#ffffff" name="theme-color">
+	<!-- stylesheets -->
+	<link href="css/main.css" rel="stylesheet">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<!-- zocial -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.3.0/css/zocial.css" rel="stylesheet">
+	<!-- favicons-->
 	<link href="img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 	<link href="img/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
 	<link href="img/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 	<link href="img/favicons/site.webmanifest" rel="manifest">
 	<link href="img/favicons/safari-pinned-tab.svg" rel="mask-icon">
 	<link href="img/favicons/favicon.ico" rel="shortcut icon">
-	<meta content="#da532c" name="msapplication-TileColor">
-	<meta content="img/favicons/browserconfig.xml" name="msapplication-config">
-	<meta content="#ffffff" name="theme-color">
+	
 </head>
 
 <body>
+
 	<!-- content wrapper -->
-
-
 	<main class="wrapper">
-		<!-- Top content: logo, name, title -->
 
-
+		<!-- header section -->
 		<header class="header">
-			<div class="logo"><!-- TODO image and alt -->
+
+			<!-- logo -->
+			<div class="logo">
 			<img alt="Logo" class="avatar" src="img/logo.svg">
 			</div>
-
-
+			
+			<!-- Name and title -->
 			<div class="title">
 				<h1>Eugenio Pilastro Luca</h1>
-
-
 				<p><span class="blue">Udacity Front End Web Developer Nanodegree</span> student</p>
 			</div>
 		</header>
-		<!-- full size image -->
 
-
+		<!-- full size image section-->
 		<section class="main-image">
 			<hr>
-			<!-- TODO image and alt -->
-			<!--            <picture>
-                <source srcset="img/main.jpg" media="(min-width: 750px)">
-                <img class="full-image" src="img/main-small.jpg" alt="Hcard">
-
-            </picture> -->
+			<!-- The wide image is displayed on large screens, the taller one (main-small.jpg) on smaller viewports-->
 			<img alt="Hcard" class="full-image" sizes="85.5vw" src="img/main-small.jpg" srcset="img/main-small.jpg 339w, img/main.jpg 1000w">
 		</section>
 
-
+		<!-- text section -->
 		<section class="description">
 			<p class="about-me">I am a self-taught computer technician and Web development enthusiast, I’m passionate about Marketing and Communication and I’m fascinated by the rapidly growing possibilities offered by the Internet and how Web 2.0 is shaping new ways for society to interact.</p>
 		</section>
 
-
+		<!-- projects section -->
 		<section class="work">
 			<div class="work-title">
 				<h2 class="section-title">My latest projects:</h2>
 			</div>
-
-
+			
+			<!-- cat clicker -->
 			<div class="project">
 				<img alt="Cat Clicker" class="preview" src="img/catclicker.jpg">
-
 				<h3>Cat Clicker!</h3>
-
-
 				<p><a class="project-link" href="https://codepen.io/EPL/full/wyKYqw/">Cat Clicker</a>
 				</p>
 			</div>
 
-
+			<!-- pixel art maker -->
 			<div class="project">
 				<img alt="Pixel Art Maker" class="preview" src="img/pixelartmaker.jpg">
-
 				<h3>Pixel Art Maker</h3>
-
-
 				<p><a class="project-link" href="https://e-pl.github.io/Udacity/ud304-emea/Pixel%20Art%20Maker%202/index.html">Pixel Art Maker</a>
 				</p>
 			</div>
 
-
+			<!-- animal trading card -->
 			<div class="project">
 				<img alt="Animal Trading Card" class="preview" src="img/animaltradingcard.jpg">
-
 				<h3>Animal Trading Card</h3>
-
-
 				<p><a class="project-link" href="https://e-pl.github.io/Udacity/nd001/Animal%20trading%20card/card.html">Animal Trading Card</a>
 				</p>
 			</div>
 		</section>
-
-
+		
+		<!-- footer with Zocial buttons: http://zocial.smcllns.com/ -->
 		<footer class="contacts" id="contacts">
 			<h2 class="contacts-title">Contacts:</h2>
-
-
 			<div class="contact">
 				<a class="zocial gmail" href="mailto:eugenio.pilastroluca@gmail.com" id="email-link">Email</a>
 			</div>
-
-
 			<div class="contact">
 				<a class="zocial linkedin" href="https://www.linkedin.com/in/e-p-l" id="linkedin-link">LinkedIn</a>
 			</div>
-
-
 			<div class="contact">
 				<a class="zocial github" href="https://github.com/E-PL" id="github-link">GitHub</a>
 			</div>
 		</footer>
+
 	</main>
 </body>
 </html>
