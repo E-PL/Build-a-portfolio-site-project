@@ -1,5 +1,5 @@
 /*styles for body*/
-body {
+.portfolio-site {
 	text-align: center;
 	font-family: 'Source Code Pro', monospace;
 	background-color: #eee8d5;
@@ -13,13 +13,12 @@ body {
 	color: #268bd2
 }
 
-/*set full width on main tags and set background color*/
-section, header, footer {
+/*set full width on sections, header and footer*/
+.portfolio {
 	width: 100%;
-	background-color: #fdfee3
 }
 
-
+/*use flex on wrapper for mobile single column layout and set background color*/
 .wrapper {
 	display: flex;
 	flex-flow: column;
@@ -30,45 +29,55 @@ section, header, footer {
 	padding-top: 30px;
 	justify-content: center;
 	align-items: center;
-	max-width: 1100px;
+	max-width: 1000px;
+	background-color: #fdfee3;
 }
 
+/*set box sizing on header*/
 .header {
 	box-sizing: border-box;
 }
 
+/*logo width on mobile*/
 .avatar {
 	width: 20%;
 }
 
+/*single column title on mobile*/
 .title {
 	margin: auto;
 	width: 100%;
 }
 
+/*set main image size*/
 .full-image {
 	width: 95%;
 }
 
+/*style description text*/
 .description {
 	text-align: justify;
 }
 
+/*adjust projects spacing*/
 .project {
 	margin: auto;
 	padding-top: 15px;
 }
 
+/*optimize touch for projects links*/
 .project-link {
 	width: 100%;
 	min-height: 48px;
 	color: #268bd2
 }
 
+/*set projects images width*/
 .preview {
 	width: 86%;
 }
 
+/*add spacing and set width on description text*/
 .about-me {
 	padding: 3px;
 	padding-top: 15px;
@@ -76,11 +85,13 @@ section, header, footer {
 	margin: auto;
 }
 
+/*round logo and add spacing*/
 .avatar {
 	border-radius: 50%;
 	margin-top: 6px;
 }
 
+/*show zocial buttons on one line and add bottom spacing*/
 .contacts {
 	display: flex;
 	flex-flow: row;
@@ -88,91 +99,121 @@ section, header, footer {
 	padding-bottom: 50px;
 }
 
+/*display Zocial buttons in a single column*/
 .contact {
 	width: 80%;
 	margin: auto;
 	padding-top: 15px;
 }
 
+/*set contact title width*/
 .contacts-title {
 	width: 100%;
 }
 
+/*set width and margin on Zocial buttons*/
 #email-link, #linkedin-link, #github-link {
 	width: 90%;
 	margin: auto;
 }
 
-.button {
-	width: 80%;
-	color: #849800;
-}
-
 /*media queries*/
 
+/*media query for tablets*/
 @media screen and (min-width: 750px) {
-	/*display the logo to the left*/
+	
+	/*resize logo*/
 	.logo {
 		width: 20%;
 	}
+	
+	/*resize title*/
 	.title {
 		width: 80%;
 	}
+	
+	/*display logo and title on the same row*/
 	.header {
 		display: flex;
 		flex-flow: row;
 		flex-wrap: wrap;
 	}
+
+	/*set projects size*/
 	.project {
 		width: 48%;
 	}
+
+	/*use a 2 column layout for projects*/
 	.work {
 		display: flex;
 		flex-flow: row;
 		flex-wrap: wrap;
 	}
+
+	/*set projects heading size */
 	.work-title {
 		width: 100%;
 	}
+
+	/*style text and spacing of the header*/
 	.header {
 		justify-content: center;
 		text-align: right;
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+
+	/*resize logo*/
 	.avatar {
 		width: 58%;
 	}
+
+	/*adjust logo position*/
 	.logo {
 		text-align: left;
 	}
+
+	/*display Zocial buttons on the same line*/
 	.contact {
 		width: 30%;
 	}
 }
 
+/*media query for desktops*/
 @media screen and (min-width: 1000px) {
-	body {
+	
+	/*increase font size*/
+	.portfolio-site {
 		font-size: 18px;
 	}
+
+	/*display projects on 3 columns*/
 	.project {
 		width: 30%;
 	}
+
+	/*resize logo*/
 	.logo {
 		width: 10%;
 	}
+
+	/*resize title*/
 	.title {
 		width: 90%;
 	}
+
+	/*adjust text alignement and spacing*/
 	.contacts-title, .work-title {
 		text-align: left;
 		padding-left: 15px;
 	}
+
+	/*resize wrapper, add padding*/
 	.wrapper {
 		width: 75%;
 		/* margin: auto; */
 		padding-left: 20%;
 		padding-right: 5%;
-		background-color: #fdfee3
 	}
 }
