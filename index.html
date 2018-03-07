@@ -50,7 +50,10 @@
 		<section class="portfolio main-image">
 			<hr>
 			<!-- The wide image is displayed on large screens, the taller one (main-small.jpg) on smaller viewports-->
-			<img alt="Hcard" class="full-image" sizes="85.5vw" src="img/main-small.jpg" srcset="img/main-small.jpg 339w, img/main.jpg 1000w">
+			<picture>
+				<source srcset="img/main.jpg" media="(min-width: 750px)">
+				<img class="full-image" src="img/main-small.jpg" alt="Hcard">
+			</picture>
 		</section>
 
 		<!-- text section -->
