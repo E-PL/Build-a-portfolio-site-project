@@ -77,6 +77,12 @@
 	width: 86%;
 }
 
+/*style the about me title*/
+.about-me-title {
+	text-align: center;
+	width: 100%;
+}
+
 /*add spacing and set width on description text*/
 .about-me {
 	padding: 3px;
@@ -112,7 +118,9 @@
 }
 
 /*set width and margin on Zocial buttons*/
-#email-link, #linkedin-link, #github-link {
+#email-link,
+#linkedin-link,
+#github-link {
 	width: 90%;
 	margin: auto;
 }
@@ -204,7 +212,10 @@
 	}
 
 	/*adjust text alignement and spacing*/
-	.contacts-title, .work-title {
+	.contacts-title,
+	.work-title, 
+	.about-me-title, 
+	.portfolio-title {
 		text-align: left;
 		padding-left: 15px;
 	}
